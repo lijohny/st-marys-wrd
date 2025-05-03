@@ -44,10 +44,10 @@ get_header();
 
 <main id="main" class="overflow-x-hidden">
 	<div id="primary">
-		<section  class="relative h-[100vh] mt-[90px]">
+		<section  class="relative h-[92dvh] lg:h-[100vh] lg:mt-[90px] overflow-hidden">
 			
 			<!-- Video Background -->
-			<video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover aspect-video z-[-1]">
+			<video autoplay loop muted playsinline class="absolute top-0 scale-[1.5] lg:scale-0 left-0 w-full h-full object-cover lg:aspect-video z-[-1]">
 				<source src="<?php echo esc_url(get_template_directory_uri() . '/assets/churchvideoplayback.mp4'); ?>" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -55,13 +55,13 @@ get_header();
 			<!-- Overlay -->
 			<div class="absolute top-0 left-0 w-full h-full bg-black opacity-85"></div>
 
-			<div class="container mx-auto px-24 flex justify-center items-center h-full relative z-50 !flex-col text-center">
+			<div class="container mx-auto px-5 lg:px-24 py-[20px] flex justify-center items-center h-full relative z-50 !flex-col text-center">
 
 				<!-- Heading Animation -->
 				<?php $home_banner = get_field('home_banner');
 
 				if ($home_banner): ?>
-					<h1 id="animated-heading" class="mb-4 text-6xl text-white w-[70%] opacity-0">
+					<h1 id="animated-heading" class="mb-4 tex-3xl lg:text-6xl text-white lg:w-[70%] opacity-0">
 						<?php echo esc_html($home_banner['home_banner_first_heading']); ?>
 						<span class="text-xl block mt-2"><?php echo esc_html($home_banner['home_banner_sub_small_heading']); ?></span>
 					</h1>
@@ -69,7 +69,7 @@ get_header();
 
 
 				<!-- Paragraph Animation -->
-				<p id="animated-paragraph" class="text-white text-xl w-[70%]">
+				<p id="animated-paragraph" class="text-white text-base lg:text-xl lg:w-[70%]">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur obcaecati vel repudiandae dicta  tenetur veniam nemo nihil. Maiores fugiat atque nulla, alias magnam fuga quidem nihil hic eos eius?
 				</p>
 			</div>
@@ -79,8 +79,8 @@ get_header();
 			<img class="absolute top-[-10%]" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/properring.png'); ?>" alt="ring image">
 
 			<section class="my-[90px] z-10 relative">
-				<div class="container mx-auto px-24">
-					<div class="grid grid-cols-2 gap-10 items-start">
+				<div class="container mx-auto px-5 lg:px-24">
+					<div class="grid lg:grid-cols-2 gap-10 items-start">
 						<!-- Left Image -->
 						<div id="left-item-1">
 							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/newdentcareimage.jpg'); ?>"  alt="Nature Image" class="w-full rounded-lg shadow-lg">
@@ -106,8 +106,8 @@ get_header();
 			</section>
 
 			<section class="my-[90px] z-10 relative">
-				<div class="container mx-auto px-24">
-					<div class="grid grid-cols-2 gap-10 items-start">
+				<div class="container mx-auto px-5 lg:px-24">
+					<div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 items-start">
 						<!-- Left Text -->
 						<div id="left-item-2" class="text-gray-800">
 							<p class="mb-4 leftrightcard">
@@ -134,21 +134,21 @@ get_header();
 			</section>
 
 			<section class="bg-white py-16 z-10 relative">
-				<div class="container mx-auto px-24 text-center">
+				<div class="container mx-auto px-5 lg:px-24 text-center">
 
-					<div class="flex items-center justify-between space-x-10 text-center py-10">
+					<div class="flex flex-col lg:flex-row items-center justify-between space-x-10 text-center py-10">
 						<!-- <div class="rotate-container">
 							<img class="" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/globe.svg'); ?>" alt="ring image">
 						</div> -->
 
-						<div class="rotate-container mr-36">
+						<div class="rotate-container mr-36 opacity-[0.3] lg:opacity-100">
 							<img class="w-[291px] h-[291px] sm:w-[330px] sm:h-[330px] lg:w-[370px] lg:h-[370px] xl:h-[414px] xl:w-[414px] 2xl:w-[446.01px] 2xl:h-[446.01px] 3xl:h-[477px] 3xl:w-[477px] absolute left-[-129px] sm:left-[-129px] lg:left-[-149px] xl:left-[-171px] 3xl:left-[-184px]"
 								src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/globe.svg'); ?>" 
 								alt="globe">
 						</div>
 
 
-						<div class=" flex flex-col" id="stat1">						
+						<div class=" flex flex-col z-50" id="stat1">						
 							<h2 class="text-7xl font-bold number" data-value="10">0+</h2>
 							<p class="text-gray-500 text-2xl">Year's</p>
 						</div>
@@ -174,34 +174,34 @@ get_header();
 
 			
 			<section>
-				<div class="container mx-auto px-24 text-center pt-34">
+				<div class="container mx-auto px-5 lg:px-24 text-center lg:pt-34">
 					<!-- Heading -->
-					<div class="mb-16 text-left flex justify-start items-start">
-						<h2 class="text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">Our Church services <span>🙏</span></h2>
+					<div class="mb-8 lg:mb-16 text-left flex justify-start items-start">
+						<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">Our Church services <span class="hidden lg:flex">🙏</span></h2>
 					</div>
 					<table class="w-full border border-[#658161] text-center text-xl">
 						<thead class="bg-[#658161] text-white">
 						<tr>
-							<th class="border border-[#658161] p-8">Time</th>
-							<th class="border border-[#658161] p-8">Day</th>
-							<th class="border border-[#658161] p-8">Type</th>
+							<th class="border border-[#658161] p-3 lg:p-8">Time</th>
+							<th class="border border-[#658161] p-3 lg:p-8">Day</th>
+							<th class="border border-[#658161] p-3 lg:p-8">Type</th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr>
-							<td class="border border-[#658161] p-8">7:00 AM</td>
-							<td class="border border-[#658161] p-8">Morning</td>
-							<td class="border border-[#658161] p-8">wake up</td>
+							<td class="border border-[#658161] p-3 lg:p-8">7:00 AM</td>
+							<td class="border border-[#658161] p-3 lg:p-8">Morning</td>
+							<td class="border border-[#658161] p-3 lg:p-8">wake up</td>
 						</tr>
 						<tr>
-							<td class="border border-[#658161] p-8">7:00 AM</td>
-							<td class="border border-[#658161] p-8">Morning</td>
-							<td class="border border-[#658161] p-8">wake up</td>
+							<td class="border border-[#658161] p-3 lg:p-8">7:00 AM</td>
+							<td class="border border-[#658161] p-3 lg:p-8">Morning</td>
+							<td class="border border-[#658161] p-3 lg:p-8">wake up</td>
 						</tr>
 						<tr>
-							<td class="border border-[#658161] p-8">7:00 AM</td>
-							<td class="border border-[#658161] p-8">Morning</td>
-							<td class="border border-[#658161] p-8">wake up</td>
+							<td class="border border-[#658161] p-3 lg:p-8">7:00 AM</td>
+							<td class="border border-[#658161] p-3 lg:p-8">Morning</td>
+							<td class="border border-[#658161] p-3 lg:p-8">wake up</td>
 						</tr>
 						
 						</tbody>
@@ -209,11 +209,11 @@ get_header();
 				</div>
 			</section>
 
-			<section class="mb-28 mt-28 z-10 relative h-[550px]">
-				<div class="container mx-auto px-24 text-center h-full">
+			<section class="mb-28 mt-12 lg:mt-28 z-10 relative h-[550px]">
+				<div class="container mx-auto px-5 lg:px-24 text-center h-full">
 					<!-- Heading -->
-					<div class="mb-16 text-left flex justify-start items-start">
-						<h2 class="text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">Our Backbones <span>💪</span></h2>
+					<div class="mb-8 lg:mb-16 text-left flex justify-start items-start">
+						<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">Our Backbones <span class="hidden lg:flex">💪</span></h2>
 					</div>
 
 					<?php if( have_rows('slider_wrapper') ): ?>
@@ -252,20 +252,20 @@ get_header();
 
 
 			<section class="bg-white my-16 z-10 relative">
-				<div class="container mx-auto px-24 text-center">
+				<div class="container mx-auto px-5 lg:px-24 text-center">
 					<!-- Heading -->
-					<h2 class="text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">
+					<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">
 						Get in Touch 
-						<span>🤝</span> 
-						<span>📧</span> 
-						<span>📞</span>
+						<span class="hidden lg:flex">🤝</span> 
+						<span class="hidden lg:flex">📧</span> 
+						<span class="hidden lg:flex">📞</span>
 					</h2>
 
 					<!-- Contact Boxes -->
-					<div  class="grid contact-box-container grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+					<div  class="grid contact-box-container grid-cols-1 md:grid-cols-3 g p-3alg:p-8 mt-10">
 						
 						<!-- Office Location -->
-						<div class="border contact-card border-gray-300 p-8 rounded-lg shadow-lg">
+						<div class="border contact-card border-gray-300 p-3 lg:p-8 rounded-lg shadow-lg">
 							<div class="flex justify-center">
 								<!-- Add your SVG icon here -->
 								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/church-logo.png'); ?>"  class="w-12 h-12" alt="Location Icon">
@@ -279,7 +279,7 @@ get_header();
 						</div>
 
 						<!-- Email -->
-						<div class="border contact-card border-gray-300 p-8 rounded-lg shadow-lg">
+						<div class="border contact-card border-gray-300 p-3 lg:p-8 rounded-lg shadow-lg">
 							<div class="flex justify-center">
 								<!-- Add your SVG icon here -->
 								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/gmail-logo.png'); ?>" class="h-12" alt="Mail Icon">
@@ -289,7 +289,7 @@ get_header();
 						</div>
 
 						<!-- Phone -->
-						<div class="border contact-card border-gray-300 p-8 rounded-lg shadow-lg">
+						<div class="border contact-card border-gray-300 p-3 lg:p-8 rounded-lg shadow-lg">
 							<div class="flex justify-center">
 								<!-- Add your SVG icon here -->
 								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/phone-logo.png'); ?>" class="w-12 h-12" alt="Phone Icon">
@@ -308,7 +308,7 @@ get_header();
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
 		var swiper = new Swiper(".mySwiper", {
-			slidesPerView: 6,  // FIXED: Set a number instead of "auto"
+			slidesPerView: 1,  // FIXED: Set a number instead of "auto"
 			spaceBetween: 20,  // Adjusts spacing
 			loop: true,  // Enables infinite loop
 			autoplay: {

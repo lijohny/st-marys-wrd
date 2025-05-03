@@ -19,7 +19,7 @@ get_header();
 			<!-- Overlay -->
 			<div class="absolute top-0 left-0 w-full h-full bg-white opacity-15"></div>
 
-			<div class="container mx-auto px-24 flex justify-center items-center h-full relative z-50 !flex-col text-center">
+			<div class="container mx-auto px-5 lg:px-24 flex justify-center items-center h-full relative z-50 !flex-col text-center">
                 <div class="shadow-custom rounded-lg p-10 w-full flex items-center flex-col">
                     <h2 class="text-3xl font-bold text-gray-900 mb-2">We would love to hear from You.</h2>
                     <p class="text-gray-600 text-md mb-6 w-1/2">
@@ -60,7 +60,7 @@ get_header();
 		<div class="relative">
 			<!-- <img class="absolute top-[-40%] w-[1000px]" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/properring.png'); ?>" alt="ring image"> -->
 			<section class="my-16 z-60 relative">
-				<div class="container mx-auto px-24 text-center">
+				<div class="container mx-auto px-5 lg:px-24 text-center">
 					<!-- Heading -->
 					<h2 class="text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">
 						Get in Touch 
