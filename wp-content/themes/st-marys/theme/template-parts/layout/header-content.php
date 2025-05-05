@@ -60,7 +60,7 @@
 	}
 </style>
 
-<header id="masthead" class="transition-all duration-300">
+<header id="masthead" class="transition-all duration-300 relative z-[30000]">
 	<div class="flex justify-between items-center w-full text-white">
 		<div class="container mx-auto justify-between lg:justify-start px-5 lg:px-24 py-2 flex items-center gap-14">
 			<div>
@@ -78,13 +78,13 @@
 			<div class="relative">
   
 			<!-- Hamburger Icon -->
-			<button id="openMenuBtn" class="lg:hidden z-50 relative">
+			<button id="openMenuBtn" class="lg:hidden  relative">
 				<img class="w-[50px]" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hammenu.png'); ?>" alt="Open Menu">
 			</button>
 
 			<!-- Mobile Menu (initially hidden) -->
 			<div id="mobileMenu"
-				class="fixed z-[20001] top-0 right-0 w-64 h-full bg-white shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col gap-6">
+				class="fixed z-[20002] top-0 right-0 w-64 h-full bg-white shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col gap-6">
 
 				<!-- Close Icon -->
 				<button id="closeMenuBtn" class="self-end">

@@ -47,7 +47,7 @@ get_header();
 		<section  class="relative h-[92dvh] lg:h-[100vh] lg:mt-[90px] overflow-hidden">
 			
 			<!-- Video Background -->
-			<video autoplay loop muted playsinline class="absolute top-0 scale-[1.5] lg:scale-0 left-0 w-full h-full object-cover lg:aspect-video z-[-1]">
+			<video autoplay loop muted playsinline class="absolute top-0 videobanner left-0 w-full h-full object-cover lg:aspect-video z-[-1]">
 				<source src="<?php echo esc_url(get_template_directory_uri() . '/assets/churchvideoplayback.mp4'); ?>" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -262,7 +262,7 @@ get_header();
 					</h2>
 
 					<!-- Contact Boxes -->
-					<div  class="grid contact-box-container grid-cols-1 md:grid-cols-3 g p-3alg:p-8 mt-10">
+					<div  class="grid contact-box-container grid-cols-1 md:grid-cols-3 gap-3 lg:p-8 mt-10">
 						
 						<!-- Office Location -->
 						<div class="border contact-card border-gray-300 p-3 lg:p-8 rounded-lg shadow-lg">

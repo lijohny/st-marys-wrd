@@ -15,16 +15,16 @@
 	}
 </style>
 
-<footer id="colophon">
+<footer id="colophon " class="bg-[#d4e2d2] ">
 
-	<div class="bg-[#d4e2d2] overflow-x-hidden rounded-t-4xl p-5 lg:p-12 shadow-cyan-300  lg:gap-14 lg:flex justify-between items-start">
+	<div class="container mx-auto lg:px-24 overflow-x-hidden rounded-t-4xl p-5 lg:p-12 shadow-cyan-300  lg:gap-14 lg:flex justify-between items-start">
 		<div>
 			<a href="<?php echo esc_url(home_url('/')); ?>"><img class="w-[300px] bg-[#658161] logo-shadow-cstm px-5 py-2 rounded-lg" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/stmarrys-logowhite.png'); ?>" alt="<?php bloginfo('name'); ?>"></a>
 			<div class="mt-8">
-				<h6>
-				St Mary's Malankara Syriac Catholic
-				Church Kallamam,
-				Veeranakavu, trivandrum Kerala 695572
+				<h6 class="lg:text-2xl text-xl font-semibold text-gray-800 lg:w-[60%]">
+					St Mary's Malankara Syriac Catholic
+					Church Kallamam,
+					Veeranakavu, trivandrum Kerala 695572
 				</h6>
 				<h4 class="flex-col lg:flex-row flex lg:items-center gap-2 text-gray-800 my-4">
 					<!-- Email Icon -->
@@ -84,7 +84,7 @@
 			</div>
 		</div>
 
-		<div class="map w-full h-[300px] lg:w-[700px] lg:h-[450px] pt-4 lg:pt-0">
+		<div class="map w-full h-[300px] lg:w-[700px] 2xl:w-[900px] lg:h-[450px] pt-4 lg:pt-0">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.6659943514805!2d77.1141059!3d8.531770800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b5ba20d99563%3A0xaf667bcabfc97881!2sSt%20Mary&#39;s%20Malankara%20Syriac%20Catholic%20Church%20Kallamam!5e0!3m2!1sen!2sin!4v1741466644596!5m2!1sen!2sin" 
 			class="rounded-3xl w-full h-full"	width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
