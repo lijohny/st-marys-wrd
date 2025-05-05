@@ -93,7 +93,7 @@ get_header();
 								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/gmail-logo.png'); ?>" class="h-12" alt="Mail Icon">
 							</div>
 							<h3 class="text-xl font-semibold text-gray-800 mt-4">OUR MAIL</h3>
-							<p class="text-blue-950 mt-2">kallamamst.marysmalankaracath@gmail.com</p>
+							<p class="text-blue-950 mt-2" style="line-break: anywhere;">kallamamst.marysmalankaracath@gmail.com</p>
 						</div>
 
 						<!-- Phone -->

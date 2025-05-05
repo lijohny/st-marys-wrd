@@ -211,6 +211,30 @@ function stmarys_enqueue_block_editor_script() {
 }
 add_action( 'enqueue_block_assets', 'stmarys_enqueue_block_editor_script' );
 
+
+add_action('save_post', 'save_custom_footnotes');
+function save_custom_footnotes($post_id) {
+    // Avoid auto-save and revision triggers
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+    if (wp_is_post_revision($post_id)) return;
+
+    // Check permissions
+    if (!current_user_can('edit_post', $post_id)) return;
+
+    // Make sure SCF is available
+    if (!function_exists('SCF::update')) return;
+
+    // Make sure footnotes data is present in the form
+    if (isset($_POST['footnotes'])) {
+        $footnotes = sanitize_text_field($_POST['footnotes']);
+
+        // Update using SCF
+        SCF::update($post_id, 'your_group_name.footnotes', $footnotes);
+        // Replace 'your_group_name.footnotes' with your actual SCF field name and group
+    }
+}
+
+
 /**
  * Add the Tailwind Typography classes to TinyMCE.
  *

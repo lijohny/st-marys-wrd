@@ -31,7 +31,7 @@
 					<svg class="w-6 h-6 text-[#DB4437]" fill="currentColor" viewBox="0 0 24 24">
 						<path d="M12 12.713l11.985-8.486A1 1 0 0 0 23 3H1a1 1 0 0 0-.985 1.227L12 12.713zm11.985-7.05L12 14.288 0 5.663V19a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V5.663z"/>
 					</svg>
-					<a href="" class="hover:text-[#1877F2] w-[280px] text-[#658161] transition-colors"> <span>kallamamst.marysmalankaracath@gmail.com</span> </a>
+					<a href="" class="hover:text-[#1877F2] w-[280px] text-[#658161] transition-colors"> <span style="line-break: anywhere;" class="">kallamamst.marysmalankaracath@gmail.com</span> </a>
 				</h4>
 
 				<h4 class="flex items-center gap-2 text-gray-800 my-4">

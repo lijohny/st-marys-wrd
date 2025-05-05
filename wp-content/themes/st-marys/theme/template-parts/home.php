@@ -76,7 +76,7 @@ get_header();
 		</section>
 
 		<div class="relative">
-			<img class="absolute top-[-10%]" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/properring.png'); ?>" alt="ring image">
+			<img class="absolute top-[4%] lg:top-[-10%] scale-[1.9] lg:scale-0" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/properring.png'); ?>" alt="ring image">
 
 			<section class="my-[90px] z-10 relative">
 				<div class="container mx-auto px-5 lg:px-24">
@@ -149,23 +149,23 @@ get_header();
 
 
 						<div class=" flex flex-col z-50" id="stat1">						
-							<h2 class="text-7xl font-bold number" data-value="10">0+</h2>
+							<h2 class="text-7xl font-bold number" data-value="50">0+</h2>
 							<p class="text-gray-500 text-2xl">Year's</p>
 						</div>
 
 						<div class="" id="stat2">
-							<h2 class="text-7xl font-bold number" data-value="200">0+</h2>
+							<h2 class="text-7xl font-bold number" data-value="10">0+</h2>
 							<p class="text-gray-500 text-2xl">Charity's</p>
 						</div>
 
 						<div class="" id="stat3">
-							<h2 class="text-7xl font-bold number" data-value="200">0+</h2>
+							<h2 class="text-7xl font-bold number" data-value="70">0+</h2>
 							<p class="text-gray-500 text-2xl">People</p>
 						</div>
 
 						<div class="" id="stat4">
-							<h2 class="text-7xl font-bold number" data-value="50">0+</h2>
-							<p class="text-gray-500 text-2xl">Technologies</p>
+							<h2 class="text-7xl font-bold number" data-value="150">0+</h2>
+							<p class="text-gray-500 text-2xl">Toatal church branches</p>
 						</div>
 					</div>
 
@@ -250,15 +250,40 @@ get_header();
 				</div>
 			</section>
 
+			<section class="mb-28 mt-12 lg:mt-28 z-10 relative">
+				<div class="container mx-auto px-5 lg:px-24 text-center h-full">
+					<!-- Heading -->
+					<div class="mb-8 lg:mb-16 text-left flex justify-start items-start">
+						<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">Our Jubilee Song<span class="hidden lg:flex">🎶</span></h2>
+					</div>
+
+					<p class="text-gray-800 font-semibold text-lg mb-4 space-y-1">
+						ജൂബിലി തൻ നിറവിൽ <br>
+						മാതാവിൻ തിരുനാമത്തിൽ <br>
+						ഈ നാടിൻ അനുഗ്രഗമായി <br>
+						പൊൻപ്രഭ നിറഞ്ഞ അലയം <br>
+						ഇത് കല്ലാമo ദൈവാലയം <br>
+
+							വിശുദ്ധ്യി യോടെ ഇടവകയൊന്നായി<br>
+						സ്തുതിച്ചു പാടും മാതാവേ<br>
+						ഈ ലോക മാതാവേ<br>
+						ഭൂലോക മാതാവേ ജൂബിലി സുവർണ്ണ ജൂബിലി<br>
+
+						കർത്താവിൻ തീരുമാനം പുകഴും<br>
+						പരിശുദ്ധമം ഈ അലയം <br>
+						ഈ നാടിൻ ആശ്രയമായി <br>
+						മലങ്കര ദൈവാലയം <br>
+						ഇത് കല്ലാമo ദൈവാലയം <br>
+						ജൂബിലി സുവർണ്ണ ജൂബിലി<br>
+					</p>
+				</div>
+			</section>
 
 			<section class="bg-white my-16 z-10 relative">
 				<div class="container mx-auto px-5 lg:px-24 text-center">
 					<!-- Heading -->
 					<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 flex justify-center items-center gap-2">
 						Get in Touch 
-						<span class="hidden lg:flex">🤝</span> 
-						<span class="hidden lg:flex">📧</span> 
-						<span class="hidden lg:flex">📞</span>
 					</h2>
 
 					<!-- Contact Boxes -->
@@ -285,7 +310,7 @@ get_header();
 								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/gmail-logo.png'); ?>" class="h-12" alt="Mail Icon">
 							</div>
 							<h3 class="text-xl font-semibold text-gray-800 mt-4">OUR MAIL</h3>
-							<p class="text-blue-950 mt-2">kallamamst.marysmalankaracath@gmail.com</p>
+							<p class="text-blue-950 mt-2" style="line-break: anywhere;">kallamamst.marysmalankaracath@gmail.com</p>
 						</div>
 
 						<!-- Phone -->

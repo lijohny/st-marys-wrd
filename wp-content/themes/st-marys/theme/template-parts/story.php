@@ -24,7 +24,7 @@ get_header();
   </div>
 
   <!-- Content Container -->
-  <div class="max-w-3xl mx-auto px-4 py-8">
+  <div class="max-w-3xl mx-auto px-4 py-8 mt-[-515px] lg:mt-0 z-10 relative bg-white/70">
     <!-- Title -->
     <h1 class="text-4xl font-bold mb-2"><?php the_title(); ?></h1>
 
@@ -37,7 +37,7 @@ get_header();
 
     <!-- Post Content -->
     <?php while (have_posts()) : the_post(); ?>
-      <div class="prose prose-sm max-w-none">
+      <div class="prose prose-sm max-w-none story-area">
         <?php echo wp_kses_post(get_field('story_area')); ?>
       </div>
     <?php endwhile; ?>
@@ -62,6 +62,7 @@ get_header();
     
     <h6 class="text-sm font-semibold mb-1 text-gray-600">Written by: <span class="font-normal"><?php the_author(); ?></span></h6>
   </div>
+
 </div>
 <!-- Blog Story Page End -->
 
