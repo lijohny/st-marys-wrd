@@ -67,8 +67,8 @@ get_header();
 
 				if ($home_banner): ?>
 					<h1 id="animated-heading" class="mb-4 tex-3xl lg:text-6xl text-white lg:w-[70%] opacity-0">
-						<?php echo esc_html($home_banner['home_banner_first_heading']); ?>
-						<span class="text-xl block mt-2"><?php echo esc_html($home_banner['home_banner_sub_small_heading']); ?></span>
+						St Mary's Malankara Syrian 
+						<span class="text-xl block mt-2">Catholic Church "Kallamam"</span>
 					</h1>
 				<?php endif; ?>
 
@@ -382,6 +382,15 @@ get_header();
 										<div class="absolute bottom-4 left-4 text-white">
 											<h3 class="text-lg font-semibold">Rev.Fr.Varghese</h3>
 											<p class="text-sm font-medium">Naduthala</p>
+										</div>
+									</div>
+
+									<div class="swiper-slide relative w-64 h-96 rounded-3xl overflow-hidden shadow-lg">
+										<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/fatheraboop.jpeg'); ?>" alt="Default Image" class="absolute inset-0 w-full h-full object-cover">
+										<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+										<div class="absolute bottom-4 left-4 text-white">
+											<h3 class="text-lg font-semibold">Fr Anoop Mylettu OFM Cap</h3>
+											<p class="text-sm font-medium"></p>
 										</div>
 									</div>
 							</div>
